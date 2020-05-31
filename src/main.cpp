@@ -1,7 +1,14 @@
 #include <iostream>
 
+#include "tensor.hpp"
+
 int main() {
-    std::cout << "test" << std::endl;
+    tensor<double> hoge;
+
+    hoge() = 10;
+
+    std::cout << hoge() << std::endl;
+
     return 0;
 }
 
